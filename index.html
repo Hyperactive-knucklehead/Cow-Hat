@@ -129,7 +129,7 @@
 
         <!-- eid-special start -->
 
-        <section class="container-fluid" id="cows" data-aos="fade-left" data-aos-duration="1000">
+        <section class="container-fluid " id="cows" data-aos="fade-right" data-aos-duration="1000">
             <hr>
             <h3 class="text-center ">EID SPECIAL 2021</h3>
             <hr>
@@ -278,7 +278,7 @@
 
         <!-- latest collection start -->
 
-        <section class="container-fluid " data-aos="fade-right" data-aos-duration="1000">
+        <section class="container-fluid " data-aos="fade-left" data-aos-duration="1000">
             <hr>
             <h3 class="text-center "><i class="fas fa-shopping-cart"></i> LATEST COLLECTION</h3>
             <hr>
@@ -446,7 +446,7 @@
         <!-- latest collection end -->
 
         <!-- our best seller start -->
-        <section class="container-fluid  " data-aos="fade-left" data-aos-duration="1000">
+        <section class="container-fluid  " data-aos="fade-right" data-aos-duration="1000">
             <hr>
             <h3 class="text-center ">OUR BEST SELLERS</h3>
             <hr>
@@ -542,7 +542,7 @@
 
         <!-- latest on sale start -->
 
-        <section class="container-fluid " data-aos="fade-right" data-aos-duration="1000">
+        <section class="container-fluid " data-aos="fade-left" data-aos-duration="1000">
             <hr>
             <h3 class="text-center ">LATEST ON SALE</h3>
             <hr>
@@ -719,7 +719,7 @@
 
         <!-- our blog start -->
 
-        <section class="container-fluid " id="blog" data-aos="fade-right" data-aos-duration="1000">
+        <section class="container-fluid " id="blog" data-aos="fade-left" data-aos-duration="1000">
             <hr>
             <h3 class="text-center ">OUR BLOG</h3>
             <hr>
@@ -886,7 +886,12 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
     </script>
 
 </body>

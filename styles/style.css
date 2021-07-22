@@ -1,9 +1,6 @@
 /* custom css */
 
-body{
 
-        overflow-x: hidden;
-}
 .card{
         
         
@@ -13,7 +10,7 @@ body{
       cursor: pointer;
       
     }
-
+   
 
 .card:hover{
          transform: scale(1.05);
@@ -105,13 +102,13 @@ body{
         color: white;
 }
 
+
 /* media query */
 /* for mobile devices */
 
 @media only screen and (max-width:320px){
         
-
-
+        
         .card-popup{
 
                 top: 30px;
@@ -128,7 +125,7 @@ body{
 
 @media only screen and (min-width:321px) and (max-width:668px) {
 
-
+       
         .car-img{
 
                 height: 200px !important ;
