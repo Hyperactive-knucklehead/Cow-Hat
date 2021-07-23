@@ -1,6 +1,9 @@
 /* custom css */
 
+body{
 
+        overflow-x: hidden;
+}
 .card{
         
         
