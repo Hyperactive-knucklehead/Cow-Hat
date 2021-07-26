@@ -49,7 +49,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">HOME</a>
                         </li>
@@ -66,13 +66,69 @@
                             <a class="nav-link" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CART</a>
+                            <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"><i class="fas fa-shopping-cart"></i>
+                                CART </a>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h3 id="offcanvasRightLabel">Shopping Cart</h3>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body ">
+                                    <img src="images/no-productspng.png" alt=""
+                                        class="img-fluid w-75 mx-auto d-block no-product">
+
+                                    <h5 class="text-center">No Product In The Cart.</h5>
+                                    <button type="button" class="btn btn-primary btn-lg mx-auto d-block mt-3">Return To
+                                        Shop</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                aria-controls="offcanvasScrolling">
+                                <i class="fas fa-user"></i>
+                            </a>
+
+                            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"
+                                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header">
+                                    <h4 class="offcanvas-title" id="offcanvasScrollingLabel">Profile</h4>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="list-group fw-normal">
+                                        <li class="list-group-item"><i class="far fa-user me-2"></i>
+                                            My Account</li>
+                                        <li class="list-group-item"><i class="fas fa-bell me-2"></i>
+                                            Notifications</li>
+                                        <li class="list-group-item"><i class="fas fa-envelope-square me-2"></i>
+                                            Messages</li>
+                                        <li class="list-group-item"><i class="fas fa-shopping-cart me-2"></i>
+                                            Cart</li>
+                                        <li class="list-group-item"><i class="fas fa-heart me-2"></i>
+                                            My Favourite</li>
+                                        <li class="list-group-item"><i class="fas fa-shopping-bag me-2"></i>
+                                            Order</li>
+                                        <li class="list-group-item"><i class="fas fa-cart-plus me-2"></i>
+                                            Buy Again</li>
+                                        <li class="list-group-item"><i class="fas fa-store"></i>
+                                            My Store</li>
+                                        <li class="list-group-item"><i class="fas fa-gift me-2"></i> Gift Card</li>
+                                        <li class="list-group-item"><i class="fas fa-sign-in-alt me-2"></i> Sign In</li>
+                                        <li class="list-group-item"><i class="fas fa-user-circle me-2"></i> Create
+                                            Account
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
-                    </form>
+
                 </div>
             </div>
         </nav>
@@ -81,7 +137,7 @@
 
         <!-- carousel start -->
 
-        <section class="container mb-5">
+        <!-- <section class="container mb-5">
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -102,8 +158,8 @@
                             style="height: 550px; ">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/eid-adha/eid-adha-5.jpg" class="d-block w-100 car-img" alt="..."
-                            style="height: 550px;">
+                        <img src="images/eid-adha/eid-adha-4.jpg" class="d-block w-100 car-img" alt="..."
+                            style="height: 550px; ">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -118,6 +174,65 @@
                 </button>
             </div>
 
+        </section> -->
+
+        <section class="container-fluid g-0 mb-5 mt-0">
+            <div class="row  g-0">
+                <div class="col-12 col-xl-9 col-lg-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images2/carousel.png" class="d-block w-100 car-img " alt="..."
+                                    style="height: 570px;">
+                                <div class="carousel-caption d-none  d-md-block position-absolute top-0 text-lowercase">
+                                    <h5 class="text-black-50">Online Gorurhaat</h5>
+                                    <p class=" h1">ONLINE GORURHAAT IS THE FIRST ONLINE HAAT IN BANGLADESH</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images2/eid-adha-4.jpg" class="d-block w-100 car-img" alt="..."
+                                    style="height: 570px;">
+                                <div class="carousel-caption d-none d-md-block position-absolute top-0 text-black-50">
+                                    <h5 class="text-warning">কওয়ামাত্র আমরাই দিচ্ছি আপনাদের এই সুযোগ</h5>
+                                    <p class="h1">আমরা পৌঁছিয়ে দিবো আপনার পছন্দের গাভীটি একদম আপনার দরজায়</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images2/carousel2.jpg" class=" img-fluid  d-block car-img w-100" alt="..."
+                                    style="height: 570px;">
+                                <div class="carousel-caption d-none d-md-block position-absolute top-50 text-warning">
+                                    <h5>সম্পুর্ন রাসায়নিক মুক্ত অনলাইন হাট</h5>
+                                    <p class="h1 text-white">আপনার হাতের মুঠোয় আপনার পছন্দের ষাড় গাভী</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-0 d-none  d-md-none d-lg-none d-xl-block ">
+                    <div class="d-flex flex-column">
+                        <img src="images2/cow-mama.jpg" alt="">
+                        <img src="images2/carousel.png" alt="">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- carousel end -->

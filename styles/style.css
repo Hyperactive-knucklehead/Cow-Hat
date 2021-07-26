@@ -104,6 +104,12 @@ body{
 
         color: white;
 }
+.no-product{
+
+        opacity: 0.1;
+}
+
+
 
 
 /* media query */
@@ -111,7 +117,9 @@ body{
 
 @media only screen and (max-width:320px){
         
-        
+        body{
+                overflow-x: hidden;
+        }
         .card-popup{
 
                 top: 30px;
@@ -131,7 +139,8 @@ body{
        
         .car-img{
 
-                height: 200px !important ;
+                height: 300px !important ;
+                
         }
        
         
@@ -143,7 +152,9 @@ body{
 
 
 
-        
+        body{
+                overflow-x: hidden;
+        }
         .out-of-stock{
 
                 top: 50px;
